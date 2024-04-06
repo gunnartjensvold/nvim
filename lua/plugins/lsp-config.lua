@@ -39,10 +39,9 @@ return {
 				},
 				filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue" },
 			})
-
-			lspconfig.solargraph.setup({
-				capabilities = capabilities,
-			})
+      lspconfig.pyright.setup({
+        capabilities = capabilities
+      })
 			lspconfig.html.setup({
 				capabilities = capabilities,
 			})
